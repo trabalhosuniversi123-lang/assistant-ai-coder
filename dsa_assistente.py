@@ -1,4 +1,4 @@
-# Estudo de Caso 1 - DSA AI Coder - Criando Seu Assistente de Programação Python, em Python
+# Estudo de Caso 1 - Assistent AI Coder - Criando Seu Assistente de Programação Python, em Python
 
 # Importa módulo para interagir com o sistema operacional
 import os
@@ -51,15 +51,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("Desenvolvido para auxiliar em suas dúvidas de programação com Linguagem Python. IA pode cometer erros. Sempre verifique as respostas.")
 
-    #st.markdown("---")
-    #st.markdown("Conheça os Cursos Individuais, Formações e Programas de Pós-Graduação da DSA:")
-
-    # Link para o site da DSA
-    #st.markdown("🔗 [Data Science Academy](https://www.datascienceacademy.com.br)")
-    
-    # Botão de link para enviar e-mail ao suporte da DSA
-    #st.link_button("✉️ E-mail Para o Suporte DSA no Caso de Dúvidas", "mailto:suporte@datascienceacademy.com.br")
-
+   
 # Título principal do app
 st.title("Assistente Pessoal de Programação Python 🐍")
 
@@ -142,7 +134,7 @@ if prompt := st.chat_input("Qual sua dúvida sobre Python?"):
                 st.markdown(dsa_ai_resposta)
                 
                 # Armazena resposta do assistente no estado da sessão
-                st.session_state.messages.append({"role": "assistant", "content": dsa_ai_resposta})
+                st.session_state.messages.append({"role": "assistant", "content": assistent_ai_resposta})
 
             # Caso ocorra erro na comunicação com a API, exibe mensagem de erro
             except Exception as e:
